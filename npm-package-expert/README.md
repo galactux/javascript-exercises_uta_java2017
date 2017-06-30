@@ -2,8 +2,6 @@
 
 A JavaScript programming exercise: Card game "Top Trumps".
 
-Course: Javaohjelmointi 2017 (29.3. - 21.11.2017) - University of Tampere/School of Information Sciences.
-
 ### Technologies practiced ###
 
 * Node.js
