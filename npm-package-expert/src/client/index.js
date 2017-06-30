@@ -30,4 +30,8 @@ class App {
   }
 }
 
-const app = new App(document.getElementById('root'));
+// Moduulitiedoston sisällä muuttujat eivät ole globaaleja. Asetetaan
+// globaali `app`-muuttuja, jotta HTML-koodista voidaan kutsua sen
+// metodeja.
+window.app = new App(document.getElementById('root'));
+// const app = new App(document.getElementById('root'));

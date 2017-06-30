@@ -4,8 +4,9 @@
   "description": "",
   "main": "lib/server",
   "scripts": {
-    "build": "babel src --out-dir lib --source-maps",
-    "dev": "npm run build -- --watch",
+    "build": "babel src --out-dir lib --source-maps --ignore /client/",
+    "bundle": "cross-env NODE_ENV=production webpack -p --progress",
+    "dev": "npm run build && cross-env NODE_ENV=development webpack --progress --watch",
     "start": "node ."
   },
   "private": true,
@@ -14,9 +15,19 @@
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.24.1",
+    "babel-loader": "^7.1.1",
+    "babel-polyfill": "^6.23.0",
     "babel-preset-env": "^1.5.2",
     "babel-preset-stage-2": "^6.24.1",
+    "cross-env": "^5.0.1",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "file-loader": "^0.11.2",
     "koa": "^2.3.0",
-    "koa-static": "^3.0.0"
+    "koa-static": "^3.0.0",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.0.0",
+    "webpack-livereload-plugin": "^0.11.0"
   }
 }
