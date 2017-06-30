@@ -1,0 +1,22 @@
+{
+  "name": "npm-package-expert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/server",
+  "scripts": {
+    "build": "babel src --out-dir lib --source-maps",
+    "dev": "npm run build -- --watch",
+    "start": "node ."
+  },
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-stage-2": "^6.24.1",
+    "koa": "^2.3.0",
+    "koa-static": "^3.0.0"
+  }
+}
