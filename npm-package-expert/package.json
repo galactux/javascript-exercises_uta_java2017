@@ -1,7 +1,7 @@
 {
   "name": "npm-package-expert",
   "version": "1.0.0",
-  "description": "",
+  "description": "JavaScript exercise: Card game \"Top Trumps\".",
   "main": "lib/server",
   "scripts": {
     "build": "babel src --out-dir lib --source-maps --ignore /client/",
@@ -19,12 +19,14 @@
     "babel-polyfill": "^6.23.0",
     "babel-preset-env": "^1.5.2",
     "babel-preset-stage-2": "^6.24.1",
+    "bootstrap": "^3.3.7",
     "cross-env": "^5.0.1",
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "^0.11.2",
     "koa": "^2.3.0",
     "koa-static": "^3.0.0",
+    "lodash": "^4.17.4",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9",
     "webpack": "^3.0.0",
